@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
               width: 10,
             ),
             Text(
-              "Untitled UI",
+              "",
               style: TextStyle(color: Colors.black),
             )
           ],
@@ -35,25 +35,15 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
+            SizedBox(
               width: MediaQuery.of(context).size.width,
-              height: 200,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topRight,
-                  end: Alignment.bottomLeft,
-                  colors: [
-                    kGradient1,
-                    kGradient2,
-                  ],
-                ),
-              ),
+
               child: Align(
                 alignment: Alignment.bottomCenter,
                 child: Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: CircleAvatar(
-                    radius: 60,
+                    radius:110,
                     backgroundImage: AssetImage(imagePath),
                   ),
                 ),
@@ -121,144 +111,9 @@ class HomeScreen extends StatelessWidget {
             Center(
               child: SizedBox(
                 width: MediaQuery.of(context).size.width * 0.8,
-                child: screenSize.width > 1200
-                    ? Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Flexible(
-                            flex: 3,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  "Experience",
-                                  style: kSectionTitleText,
-                                ),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                Text(aboutWorkExperience),
-                                const Divider(),
-                                Text("About Me", style: kSectionTitleText),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                Text(aboutMeSummary),
-                              ],
-                            ),
-                          ),
-                          Flexible(
-                            flex: 1,
-                            child: Column(
-                              children: [
-                                Card(
-                                  color: Colors.white,
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        vertical: 20, horizontal: 40),
-                                    child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Text(
-                                            "Location",
-                                            style: kSubTitleText,
-                                          ),
-                                          const SizedBox(
-                                            height: 10,
-                                          ),
-                                          Row(
-                                            children: [
-                                              const Icon(
-                                                Icons.circle,
-                                                size: 16,
-                                              ),
-                                              const SizedBox(
-                                                width: 5,
-                                              ),
-                                              Text(
-                                                location,
-                                              )
-                                            ],
-                                          ),
-                                          const SizedBox(
-                                            height: 10,
-                                          ),
-                                          Text(
-                                            "Website",
-                                            style: kSubTitleText,
-                                          ),
-                                          const SizedBox(
-                                            height: 10,
-                                          ),
-                                          Row(
-                                            children: [
-                                              Text(website),
-                                              const SizedBox(
-                                                width: 5,
-                                              ),
-                                              const Icon(
-                                                Icons.launch,
-                                                size: 16,
-                                              )
-                                            ],
-                                          ),
-                                          const SizedBox(
-                                            height: 10,
-                                          ),
-                                          Text(
-                                            "Portfolio",
-                                            style: kSubTitleText,
-                                          ),
-                                          const SizedBox(
-                                            height: 10,
-                                          ),
-                                          Row(
-                                            children: [
-                                              Text(portfolio),
-                                              const SizedBox(
-                                                width: 5,
-                                              ),
-                                              const Icon(
-                                                Icons.launch,
-                                                size: 16,
-                                              )
-                                            ],
-                                          ),
-                                          const SizedBox(
-                                            height: 10,
-                                          ),
-                                          Text(
-                                            "Email",
-                                            style: kSubTitleText,
-                                          ),
-                                          const SizedBox(
-                                            height: 10,
-                                          ),
-                                          Row(
-                                            children: [
-                                              Text(email),
-                                              const SizedBox(
-                                                width: 5,
-                                              ),
-                                              const Icon(
-                                                Icons.launch,
-                                                size: 16,
-                                              )
-                                            ],
-                                          ),
-                                          const SizedBox(
-                                            height: 10,
-                                          ),
-                                        ]),
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                        ],
-                      )
-                    : Column(
+                child:
+
+                     Column(
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -272,11 +127,11 @@ class HomeScreen extends StatelessWidget {
                               ),
                               Text(aboutWorkExperience),
                               const Divider(),
-                              Text("About Me", style: kSectionTitleText),
+                              Text("Contact us", style: kSectionTitleText),
                               const SizedBox(
                                 height: 10,
                               ),
-                              Text(aboutMeSummary),
+                             // Text(aboutMeSummary),
                             ],
                           ),
                           Column(
@@ -314,50 +169,50 @@ class HomeScreen extends StatelessWidget {
                                         const SizedBox(
                                           height: 10,
                                         ),
+                                        // Text(
+                                        //   "Website",
+                                        //   style: kSubTitleText,
+                                        // ),
+                                        // const SizedBox(
+                                        //   height: 10,
+                                        // ),
+                                        // Row(
+                                        //   children: [
+                                        //     Text(website),
+                                        //     const SizedBox(
+                                        //       width: 5,
+                                        //     ),
+                                        //     const Icon(
+                                        //       Icons.launch,
+                                        //       size: 16,
+                                        //     )
+                                        //   ],
+                                        // ),
+                                        const SizedBox(
+                                          height: 10,
+                                        ),
                                         Text(
-                                          "Website",
+                                          "Phone Number",
                                           style: kSubTitleText,
                                         ),
                                         const SizedBox(
                                           height: 10,
                                         ),
-                                        Row(
-                                          children: [
-                                            Text(website),
-                                            const SizedBox(
-                                              width: 5,
-                                            ),
-                                            const Icon(
-                                              Icons.launch,
-                                              size: 16,
-                                            )
-                                          ],
+                                        InkWell(
+
+                                          onTap: (){
+                                            
+                                            launchUrl(Uri.parse('tel://21213123123')) ;
+                                          },
+                                          child: const Text(
+                                            "+923074600554",
+                                           // style: kSubTitleText,
+                                          ),
                                         ),
                                         const SizedBox(
                                           height: 10,
                                         ),
-                                        Text(
-                                          "Portfolio",
-                                          style: kSubTitleText,
-                                        ),
-                                        const SizedBox(
-                                          height: 10,
-                                        ),
-                                        Row(
-                                          children: [
-                                            Text(portfolio),
-                                            const SizedBox(
-                                              width: 5,
-                                            ),
-                                            const Icon(
-                                              Icons.launch,
-                                              size: 16,
-                                            )
-                                          ],
-                                        ),
-                                        const SizedBox(
-                                          height: 10,
-                                        ),
+                                      
                                         Text(
                                           "Email",
                                           style: kSubTitleText,
@@ -367,7 +222,13 @@ class HomeScreen extends StatelessWidget {
                                         ),
                                         Row(
                                           children: [
-                                            Text(email),
+                                            InkWell(
+                                              onTap:(){
+
+                                                launchUrl(Uri.parse('mailto:$email'));
+                                              },
+                                                child
+                                                : Text(email)),
                                             const SizedBox(
                                               width: 5,
                                             ),
@@ -380,43 +241,74 @@ class HomeScreen extends StatelessWidget {
                                         const SizedBox(
                                           height: 10,
                                         ),
+
+                                        Text(
+                                          "Linkedin",
+                                          style: kSubTitleText,
+                                        ),
+                                        const SizedBox(
+                                          height: 10,
+                                        ),
+                                        Row(
+                                          children: [
+                                            InkWell(
+                                                onTap:(){
+
+                                                  launchUrl(Uri.parse('https://www.linkedin.com/in/muhammad-farhan-879b2b216'));
+                                                },
+                                                child
+                                                    : const Text('https://www.linkedin.com/in/muhammad-farhan-879b2b216',style: TextStyle(),),),
+                                            const SizedBox(
+                                              width: 5,
+                                            ),
+                                            const Icon(
+                                              Icons.launch,
+                                              size: 16,
+                                            )
+                                          ],
+                                        ),
+
                                       ]),
                                 ),
                               )
                             ],
                           ),
+                          const SizedBox(
+                            height: 35,
+                          ),
+                          Row(
+                            children: [
+                              Text("Projects", style: kSectionTitleText),
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 20,
+                          ),
                         ],
                       ),
               ),
             ),
-            Center(
-              child: SizedBox(
-                width: MediaQuery.of(context).size.width * 0.8,
-                child: screenSize.width > 1000
-                    ? GridView.builder(
-                        shrinkWrap: true,
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                                crossAxisCount: 2, childAspectRatio: 3),
-                        itemCount: projectList.length,
-                        itemBuilder: (BuildContext context, int index) {
-                          return ProjectWidget(
-                            projectData: projectList[index],
-                          );
-                        })
-                    : GridView.builder(
-                        shrinkWrap: true,
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                                crossAxisCount: 1, childAspectRatio: 2),
-                        itemCount: projectList.length,
-                        itemBuilder: (BuildContext context, int index) {
-                          return ProjectWidget(
-                            projectData: projectList[index],
-                          );
-                        }),
-              ),
-            ),
+
+           Center(
+            // height: 200,
+            // width: 400,
+             child: Column(
+               crossAxisAlignment: CrossAxisAlignment.center,
+              // shrinkWrap: true,
+               children:  [
+               ProjectWidget(images:suria, title: 'Suria Subah', link: 'https://play.google.com/store/apps/details?id=com.suriasabah.sabah_suria_app', des: 'This is Ecommerce Based App for a shopping Mall ',),
+               const SizedBox(height: 20,),
+                 ProjectWidget(images:guard, title: 'Guard360', link: 'https://play.google.com/store/apps/details?id=com.cybermeteors.guard_360', des: 'A premium App to manage security guards with an effective reporting tool',),
+                 const SizedBox(height: 20,),
+                 ProjectWidget(images:insta, title: 'InstaService Pro', link: 'https://play.google.com/store/apps/details?id=com.instaserviceapp.pro', des: 'InstaService Pro is the country’s first open lead marketplace for service providers.',),
+                 const SizedBox(height: 20,),
+                 ProjectWidget(images:alberta, title: 'Alberta Security Training', link: 'https://play.google.com/store/apps/details?id=com.cybermeteors.alberta_security_training', des: 'A quiz app for learning and very  useFull to online interviews and test etc.',),
+                 const SizedBox(height: 20,),
+
+               ],),
+           )
+
+
           ],
         ),
       ),

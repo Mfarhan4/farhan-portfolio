@@ -36,6 +36,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^3.0.1
   url_launcher: ^6.1.4
+  flick_video_player: ^0.5.0
+  video_player: ^2.5.1
+  photo_view: ^0.14.0
 
 dev_dependencies:
   flutter_test:
@@ -61,7 +64,11 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/
+    - assets/images/farhan.jpeg
+    - assets/suria/
+    - assets/guard/
+    - assets/insta/
+    - assets/abrerta/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

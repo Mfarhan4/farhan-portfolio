@@ -5,23 +5,25 @@ import 'package:portfolio/models/project_model.dart';
 Color kGradient1 = Colors.purple;
 Color kGradient2 = Colors.pinkAccent;
 
-String imagePath = "images/aditya.jpeg";
+String imagePath = "assets/images/farhan.jpeg";
 
 //String data to modify
-String name = "Your Name";
-String username = "flutterroles";
+String name = "Muhammad Farhan";
+String username = "Muhammad Farhan";
 
 //Link to resume on Google Drive
 String resumeLink =
-    "https://drive.google.com/file/d/1uZPqMWva6pZxzQxsR_ILLZ_FxJr24QeY/view?usp=sharing";
+    "https://drive.google.com/file/d/1kzLJAiQmMGq3Qsw38lURugjxEvMKt3HL/view?usp=sharing";
 
 //Contact Email
-String contactEmail = "mail@adityathakur.in";
+String contactEmail = "mfarhandilawar4@gmail.com";
 
 String aboutWorkExperience = '''
-Hello I am a freelancer
-
-He has previously been a speaker at the Flutter Global Summit'21, Flutter Vikings and events across colleges, universities (like VIT Chennai, Vellore, MIT-ADT), and clubs (IEEE APSIT, SFIT, GirlScript, GeeksforGeeks Student Chapter, Google CrowdSource, and more) here in India. 
+I'm a person having blend of expertise ranging from technical ones to non-technical skills who started
+journey of IT voyage with Freelancing on different platforms. I'm an experienced Flutter with a
+demonstrated history of working in the information technology and services industry. Strong engineering
+professional with a Bachelor's of Computer Science-BSCS focused in Computer Science
+Specialties: Flutter, Dart, Mobile App development
 ''';
 
 String aboutMeSummary = '''
@@ -30,29 +32,11 @@ Aditya is a content creator and has over 5K subscribers on YouTube and a 700+ me
 🚀 Discord Community: discord.adityathakur.in
 ''';
 
-String location = "Dharamshala, India";
-String website = "adityathakur.in";
-String portfolio = "adityathakurxd";
-String email = "mail@adityathakur.in";
+String location = "Lahore Punjab Pakistan";
+String portfolio = "MFarhan";
+String email = "mfarhandilawar4@gmail.com";
 
-List<Project> projectList = [
-  Project(
-      name: "Shades",
-      description:
-          "Winner IEEE Mandi 'Go Online' Challenge at Electrothon, NIT Hamirpur.",
-      link: "https://github.com/adityathakurxd/shades"),
-  Project(
-      name: "Fiasco",
-      description:
-          "Fiasco is one stop solution to help you manage Family expenses in one place!",
-      link: "https://github.com/adityathakurxd/fiasco"),
-  Project(
-      name: "Fiasco",
-      description:
-          "Fiasco is one stop solution to help you manage Family expenses in one place!",
-      link: "https://github.com/adityathakurxd/fiasco"),
-  Project(
-      name: "Flutter Portfolio",
-      description: "A template for Portfolio",
-      link: "https://github.com/adityathakurxd/flutter-portfolio")
-];
+List suria=['assets/suria/s1.jpeg','assets/suria/s2.jpeg','assets/suria/s3.jpeg','assets/suria/s4.jpeg','assets/suria/s5.jpeg','assets/suria/s6.jpeg','assets/suria/s7.jpeg'];
+List guard=['assets/guard/g1.jpeg','assets/guard/g2.jpeg','assets/guard/g3.jpeg','assets/guard/g4.jpeg','assets/guard/g5.jpeg','assets/guard/g6.jpeg','assets/guard/g7.jpeg',];
+List insta=['assets/insta/i1.jpeg','assets/insta/i2.jpeg','assets/insta/i3.jpeg','assets/insta/i4.jpeg','assets/insta/i5.jpeg','assets/insta/i6.jpeg','assets/insta/i7.jpeg',];
+List alberta=['assets/abrerta/a1.jpeg','assets/abrerta/a2.jpeg','assets/abrerta/a3.jpeg'];
